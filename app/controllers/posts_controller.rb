@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
-  def get
+  def list_posts
     render json: Post.all.to_json
   end
 
